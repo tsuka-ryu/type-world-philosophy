@@ -18,6 +18,7 @@
   `error TS2322: Type 'number' is not assignable to type 'T'.`
   補足行 `'T' could be instantiated with an arbitrary type which could be unrelated to 'number'.`
   この補足行が「T の中身を知らない」ことをコンパイラ自身の言葉で言っている、という読みで入る。
+  `{}`、`null`、`undefined`、`"s"` を返しても同じ TS2322 になることも TS 7.0.2 で確認済み（本文の「新しく作ったどの値も」の根拠）。
 - 章の問いを立てる：型はこの関数について何を知らず、知らないことで何を決めているのか。
 - ジェネリクスの型パラメータは初出なので一文で説明する（呼び出し側が決める、まだ中身の決まっていない型）。
 
@@ -56,3 +57,7 @@
 TypeScriptで `function f<T>(x: T): T` と宣言し、その本体を書くとしよう。
 この `T` は型パラメータと呼ばれる型の変数で、どの型になるかは呼び出す側が呼び出しのたびに決めるため、本体を書く時点では中身が決まっていない。
 実際に書いてみると、受け取った `x` をそのまま返す以外に、本体に書けることはほとんどない。
+
+試しに本体を `return 1;` とだけ書くと、TypeScript 7.0.2 は `error TS2322: Type 'number' is not assignable to type 'T'.` という型エラーを出す（`number` 型の値は `T` 型に代入できない、という意味である）。
+このエラーには `'T' could be instantiated with an arbitrary type which could be unrelated to 'number'.` という補足の行が続き、`T` は呼び出しのたびに `number` と無関係な型にもなりうる、と拒んだ理由を添えている。
+`1` が拒まれるのは `1` という値を選んだからではなく、本体の中で新しく作ったどの値も、`T` がどの型になっても属する値だとは言えないからである。
