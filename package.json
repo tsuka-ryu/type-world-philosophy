@@ -1,0 +1,10 @@
+{
+  "name": "type-world-philosophy",
+  "private": true,
+  "scripts": {
+    "check": "tsc -p . && node scripts/check-errors.mjs"
+  },
+  "devDependencies": {
+    "typescript": "7.0.2"
+  }
+}

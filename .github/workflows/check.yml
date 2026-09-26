@@ -1,0 +1,27 @@
+name: check
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - run: npm ci
+      - run: npm run check
+      - uses: haskell-actions/setup@v2
+        with:
+          ghc-version: "9.6.7"
+      - run: bash scripts/check-hs.sh
+      - name: Install mdBook
+        run: |
+          mkdir -p bin
+          curl -sSL https://github.com/rust-lang/mdBook/releases/download/v0.5.4/mdbook-v0.5.4-x86_64-unknown-linux-gnu.tar.gz \
+            | tar -xz --directory=bin
+          echo "$PWD/bin" >> $GITHUB_PATH
+      - run: mdbook build

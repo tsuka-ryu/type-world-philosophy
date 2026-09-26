@@ -1,0 +1,13 @@
+[book]
+title = "型で哲学を読む"
+language = "ja"
+src = "src"
+
+[output.html]
+default-theme = "rust"
+additional-css = ["theme/custom.css"]
+git-repository-url = "https://github.com/tsuka-ryu/type-world-philosophy"
+edit-url-template = "https://github.com/tsuka-ryu/type-world-philosophy/edit/main/{path}"
+
+[output.html.search]
+enable = true
