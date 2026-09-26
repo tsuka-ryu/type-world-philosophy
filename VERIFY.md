@@ -9,3 +9,10 @@
 - [ ] 『哲学探究』§66〜67、§201 前後の節番号と内容
 - [ ] ラッセルのパラドックスの発見（1901年）とフレーゲへの書簡（1902年）
 - [ ] 1939年、ケンブリッジでのウィトゲンシュタインの数学基礎論講義にチューリングが出席したこと
+
+## 00-prologue
+
+- [ ] Shu Ding「Metaphors」（shud.in）の正確な題名・URL・公開年と、「比喩は構造を保つ写像」という要約が本文の主張に合っているか（ルーティン環境からは shud.in に接続できなかった）
+- [ ] ボルヘス「記憶の人フネス」の初出（La Nación 1942年6月7日、のち『伝奇集』1944年に収録。Wikipedia と La Nación の記事で確認、一次資料は未確認）
+- [ ] フネスの「考えるとは違いを忘れること」にあたる一節の、邦訳での文言と頁（原文 "Pensar es olvidar diferencias, es generalizar, abstraer." とされる。原文も未確認）
+- [x] Wadler "Theorems for free!", FPCA '89, pp. 347–359, ACM, 1989（dblp と ACM Digital Library で確認）
