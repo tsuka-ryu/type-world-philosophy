@@ -14,6 +14,6 @@
 
 - [ ] Shu Ding「Metaphors」（shud.in）の正確な題名・URL・公開年と、「比喩は構造を保つ写像」という要約が本文の主張に合っているか（ルーティン環境からは shud.in に接続できなかった）
 - [ ] ボルヘス「記憶の人フネス」の初出（La Nación 1942年6月7日、のち『伝奇集』1944年に収録。Wikipedia と La Nación の記事で確認、一次資料は未確認）
-- [ ] フネスの「考えるとは違いを忘れること」にあたる一節の、邦訳での文言と頁（原文 "Pensar es olvidar diferencias, es generalizar, abstraer." とされる。原文も未確認）
+- [ ] フネスの「考えるとは違いを忘れること」にあたる一節の、邦訳での文言と頁（原文 "Pensar es olvidar diferencias, es generalizar, abstraer." とされる。原文も未確認。9/30：この一節が語り手の "Sospecho, sin embargo, que no era muy capaz de pensar." に続く文であることを複数の検索結果で確認し、本文では語り手の言葉として要約した。原文ページはルーティン環境から取得できなかった）
 - [ ] フネスの設定と犬の場面（落馬で体が動かなくなってから何も忘れられなくなる。「犬」という総称が大小さまざまな個体を指すことが理解しにくく、3時14分に横から見た犬と3時15分に正面から見た犬が同じ名であることが不快だった）を、原文と邦訳で照合する（原文 "el perro de las tres y catorce (visto de perfil) tuviera el mismo nombre que el perro de las tres y cuarto (visto de frente)" とされる。ルーティン環境からは本文ページに接続できず、複数の検索結果の要約で一致を確認しただけで本文に書いた）
 - [x] Wadler "Theorems for free!", FPCA '89, pp. 347–359, ACM, 1989（dblp と ACM Digital Library で確認）
